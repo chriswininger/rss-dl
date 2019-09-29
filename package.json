@@ -10,7 +10,6 @@
   "license": "MIT",
   "dependencies": {
     "axios": "^0.19.0",
-    "node-id3": "^0.1.11",
     "js-file-downloader": "^1.1.4",
     "rss-parser": "^3.7.2"
   }

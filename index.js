@@ -4,7 +4,6 @@ const Url = require('url')
 const Path = require('path')
 const RssParser = require('rss-parser')
 const parser = new RssParser()
-const NodeID3 = require('node-id3')
 
 const feedUrl = process.argv[2]
 const outputDir = process.argv[3]
@@ -41,7 +40,6 @@ if (outputDir == null) {
       console.log(`downloading ${title} from ${url}`)
 
       await downloadFile(url, fileFullPath)
-      //setTags(fileFullPath, { title })
 
       console.log(`download complete ${title}`)
 
@@ -86,10 +84,4 @@ function downloadFile(url, fileFullPath) {
     file.on('finish', resolve)
     file.on('error', reject)
   })
-}
-
-function setTags(fileFullPath, tags) {
-  if (!NodeID3.update(tags, fileFullPath)) {
-    throw new Error('could not set tags')
-  }
 }
