@@ -20,6 +20,7 @@ I ran this using node v8.12.0. If you don't already have node installed, I highl
 git clone https://github.com/chriswininger/rss-dl.git
 cd ./rss-dl
 npm install
+mkdir ./coderRadioArchive
 node ./index.js https://feeds.fireside.fm/coder/rss ./coderRadioArchive
 ```
 
