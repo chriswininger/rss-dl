@@ -9,7 +9,7 @@
   "author": "Chris Wininger",
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "js-file-downloader": "^1.1.4",
     "rss-parser": "^3.7.2"
   }
